@@ -4,6 +4,7 @@ import store from "./store/index";
 // components import
 import UserName from "./components/UserName";
 import QuestionsList from "./components/QuestionsList";
+import Result from "./components/Result";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <div className="container my-5">
           <UserName />
           <QuestionsList />
+          <Result />
         </div>
       </div>
     </Provider>
