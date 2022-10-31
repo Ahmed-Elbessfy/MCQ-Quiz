@@ -3,6 +3,7 @@ import store from "./store/index";
 
 // components import
 import UserName from "./components/UserName";
+import QuestionsList from "./components/QuestionsList";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className="App">
         <div className="container my-5">
           <UserName />
+          <QuestionsList />
         </div>
       </div>
     </Provider>
