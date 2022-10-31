@@ -34,6 +34,7 @@ const initialState = {
       answer: "8849",
     },
   ],
+  showQuestions: true,
 };
 
 // create slice to create store
@@ -53,6 +54,9 @@ const questionsSlice = createSlice({
 
       // set state questions to be the new ordered list
       state.questions = reorderedQuestions;
+    },
+    hideQuestions: (state) => {
+      state.showQuestions = !state.showQuestions;
     },
   },
 });

@@ -29,7 +29,7 @@ const QuestionsList = () => {
   };
   return (
     <>
-      {!state.userNameReducer.showPrompt && (
+      {!state.userNameReducer.showPrompt && state.questionsStore.showQuestions && (
         <div>
           <h1 className="mb-5">
             Welcome{" "}
@@ -40,17 +40,17 @@ const QuestionsList = () => {
             <br /> let us see how awesome is you!
           </h1>
           {/* Questions  */}
-          {state.questionsStore.questions.map((question) => {
-            return (
-              <form>
+          <form>
+            {state.questionsStore.questions.map((question) => {
+              return (
                 <Question
                   key={question.id}
                   question={question}
                   getAnswer={calculateScore}
                 />
-              </form>
-            );
-          })}
+              );
+            })}
+          </form>
         </div>
       )}
     </>
