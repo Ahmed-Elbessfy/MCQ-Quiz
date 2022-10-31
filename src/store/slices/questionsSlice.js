@@ -5,31 +5,31 @@ const initialState = {
   questions: [
     {
       id: 0,
-      question: "Whats is the Capital of Zimbabwy?",
+      text: "Whats is the Capital of Zimbabwy?",
       options: ["Harare", "Akra", "Norton", "Karoi"],
       answer: "Harare",
     },
     {
       id: 1,
-      question: "Your feet have ...... % bones of all of your bones.",
+      text: "Your feet have ...... % bones of all of your bones.",
       options: ["25", "10", "33", "20"],
       answer: "25",
     },
     {
       id: 2,
-      question: "Which of these are fruits?",
+      text: "Which of these are fruits?",
       options: ["Cucumber", "Onion", "Tomato", "Beans"],
       answer: "Tomato",
     },
     {
       id: 3,
-      question: "Who invented the lightbulb?",
+      text: "Who invented the lightbulb?",
       options: ["Edison", "Einstein", "Tesle", "Hawking"],
-      answer: "Tomato",
+      answer: "Edison",
     },
     {
       id: 4,
-      question: "How high is Everest?",
+      text: "How high is Everest?",
       options: ["8849", "7835", "9476", "3827"],
       answer: "8849",
     },
