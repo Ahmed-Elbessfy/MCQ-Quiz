@@ -1,10 +1,18 @@
 import PropTypes from "prop-types";
+import { useDispatch } from "react-redux";
 
-function Question({ question, getAnswer }) {
-  // handle input change to store selected value, check if answer is right or wrong then pass result up to Questions List to calculate score
+import { actions as scoreActions } from "../store/slices/scoreSlice";
+
+function Question({ question }) {
+  // allow dispatching actions
+  const dispatch = useDispatch();
+  const { setScore } = scoreActions;
+
+  // component methods
+  // handle input change to store selected value, check if answer is right or wrong then dispatch set score action with result to update score at the state
   const handleChange = (e) => {
     let result = e.target.value === question.answer ? 1 : -1;
-    getAnswer(result);
+    dispatch(setScore(result));
   };
 
   return (

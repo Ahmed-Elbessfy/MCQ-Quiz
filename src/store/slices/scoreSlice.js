@@ -10,7 +10,7 @@ const scoreSlice = createSlice({
   reducers: {
     // update score
     setScore: (state, action) => {
-      state.score = action.payload;
+      state.score = state.score + action.payload;
     },
     // hide and show score
     setScoreShow: (state) => {
