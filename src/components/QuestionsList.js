@@ -14,7 +14,7 @@ const QuestionsList = () => {
   // questions actions
   const { randomizeQuestionsOrder, hideQuestions } = questionsActions;
   // score actions
-  const { setScoreShow } = scoreActions;
+  const { setScoreShow, calculateScore } = scoreActions;
 
   // reorder questions each time the component rerendered
   useEffect(() => {
@@ -31,6 +31,9 @@ const QuestionsList = () => {
 
     // show result
     dispatch(setScoreShow());
+
+    // calculate final score
+    dispatch(calculateScore());
   };
   return (
     <>

@@ -6,13 +6,13 @@ import { actions as scoreActions } from "../store/slices/scoreSlice";
 function Question({ question }) {
   // allow dispatching actions
   const dispatch = useDispatch();
-  const { setScore } = scoreActions;
+  const { getUserAnswers } = scoreActions;
 
   // component methods
-  // handle input change to store selected value, check if answer is right or wrong then dispatch set score action with result to update score at the state
+  // handle input change to store selected value, check if answer is right or wrong then dispatch getUserAnswers action with result to update user answers at the state
   const handleChange = (e) => {
     let result = e.target.value === question.answer ? 1 : -1;
-    dispatch(setScore(result));
+    dispatch(getUserAnswers({ questionId: question.id, result }));
   };
 
   return (
