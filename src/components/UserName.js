@@ -48,6 +48,8 @@ const UserName = () => {
                 value={userName}
                 placeholder="John Doe"
                 onChange={handleNameChange}
+                required
+                minLength={3}
               />
             </div>
             {/* submit button  */}
