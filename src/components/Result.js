@@ -9,7 +9,7 @@ const Result = () => {
       {state.showScore &&
         (state.score > 0 ? (
           // Success result > 0
-          <div className="text-success">
+          <div className="py-4 border border-2 border-secondary rounded text-success">
             <h1 className="score score-success">
               {state.score}
               <br />
@@ -26,7 +26,7 @@ const Result = () => {
           </div>
         ) : (
           // Fail result <= 0
-          <div className="text-danger">
+          <div className="py-4 border border-2 border-secondary rounded text-danger">
             <h1 className="score score-danger">{state.score}</h1>
             <p className="h2 my-3">You should be studying!</p>
 

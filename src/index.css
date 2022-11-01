@@ -10,6 +10,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("media/bg.jpeg") center center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 2rem 0;
 }
 
 .App {

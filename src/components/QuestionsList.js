@@ -35,7 +35,7 @@ const QuestionsList = () => {
   return (
     <>
       {!state.userNameReducer.showPrompt && state.questionsStore.showQuestions && (
-        <div>
+        <div className="border border-dark rounded">
           <h1 className="mb-5">
             Welcome{" "}
             <strong className="text-primary">

@@ -10,7 +10,7 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <div className="container my-5">
+        <div className="container bg-white">
           <UserName />
           <QuestionsList />
           <Result />
